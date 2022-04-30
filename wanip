@@ -1,8 +1,9 @@
 #!/bin/bash
 #
+# wanip
 # get my wan IP
 #
-#
+# Robert Montgomery rcmjivaro@gmail.com 6/2016
 
 log="/var/log/wanip.log"
 #date >> $log
