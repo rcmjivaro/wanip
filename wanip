@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# get my wan IP
+#
+#
+
+log="/var/log/wanip.log"
+#date >> $log
+now=$(echo -n `date`)
+echo -e "$now `dig +short myip.opendns.com @resolver1.opendns.com`" | tee -a $log
+
+# you can also use:
+# dig TXT +short o-o.myaddr.l.google.com @ns1.google.com
+
