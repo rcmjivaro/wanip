@@ -1,0 +1,12 @@
+# /etc/logrotate.d/wanip_rotate
+#
+/var/log/wanip.log
+{
+	rotate 4
+	size 1M
+	missingok
+	notifempty
+	sharedscripts
+	postrotate
+	endscript
+}
